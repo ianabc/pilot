@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The 2i2c Hubs Pilot &#8212; 2i2c Hubs for All Pilot</title>
+    <title>Customize a hub &#8212; 2i2c Hubs for All Pilot</title>
     
   <link rel="stylesheet" href="_static/css/index.d431a4ee1c1efae0e38bdfebc22debff.css">
 
@@ -46,20 +46,21 @@
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
-    <link rel="canonical" href="https://2i2c.org/pilot/index.html" />
+    <link rel="canonical" href="https://2i2c.org/pilot/use.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Customize a hub" href="use.html" />
+    <link rel="next" title="2i2c Hub infrastructure" href="infrastructure.html" />
+    <link rel="prev" title="The 2i2c Hubs Pilot" href="index.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://2i2c.org/pilot/index.html" />
+<meta property="og:url"         content="https://2i2c.org/pilot/use.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="The 2i2c Hubs Pilot" />
-<meta property="og:description" content="The 2i2c Hubs Pilot  The 2i2c Hubs Pilot is a project to provide JupyterHubs running on cloud infrastructure in a manner that is both accessible and scalable to" />
+<meta property="og:title"       content="Customize a hub" />
+<meta property="og:description" content="Customize a hub  This page contains information about using and customizing your 2i2c Hubs.    Include content in your hub  To include content in your hub (e.g." />
 
 
 <meta name="twitter:card" content="summary" />
@@ -75,7 +76,7 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="#">
+<a class="navbar-brand text-wrap" href="index.html">
   
   
   <h1 class="site-logo" id="site-title">2i2c Hubs for All Pilot</h1>
@@ -89,9 +90,9 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="use.html">
+  <ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Customize a hub
   </a>
  </li>
@@ -142,7 +143,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/index.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/use.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -162,7 +163,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/2i2c-org/pilot/issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/2i2c-org/pilot/issues/new?title=Issue%20on%20page%20%2Fuse.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -188,23 +189,18 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-are-the-technical-goals-of-the-hubs-for-all-pilot">
-   What are the technical goals of the Hubs for All pilot?
+  <a class="reference internal nav-link" href="#include-content-in-your-hub">
+   Include content in your hub
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#who-is-eligible-for-the-2i2c-hubs-pilot">
-   Who is eligible for the 2i2c Hubs pilot?
+  <a class="reference internal nav-link" href="#write-public-books-that-connect-to-a-2i2c-hub">
+   Write public books that connect to a 2i2c Hub
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#using-a-2i2c-hub">
-   Using a 2i2c Hub
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-s-in-a-2i2c-hub">
-   What’s in a 2i2c Hub?
+  <a class="reference internal nav-link" href="#choose-the-interface">
+   Choose the interface
   </a>
  </li>
 </ul>
@@ -218,44 +214,43 @@
         
               <div>
                 
-  <div class="section" id="the-2i2c-hubs-pilot">
-<h1>The 2i2c Hubs Pilot<a class="headerlink" href="#the-2i2c-hubs-pilot" title="Permalink to this headline">¶</a></h1>
-<p>The 2i2c Hubs Pilot is a project to provide JupyterHubs running on cloud infrastructure in a manner that is both accessible and scalable to many hubs and organizations. It is being run by <a class="reference external" href="https://2i2c.org">the international interactive computing collaboration</a>.</p>
-<p>Thanks for your interest in the 2i2c Hubs pilot. This documentation should help give you an idea for the goals of this pilot project, as well as information about how you can use and customize the 2i2c Hubs that are deployed.</p>
-<div class="warning admonition">
-<p class="admonition-title"> The pilot is in an alpha phase!</p>
-<p>Information that you see here might be out-of-date as our technology stack and information around it are rapidly changing.</p>
-</div>
-<div class="section" id="what-are-the-technical-goals-of-the-hubs-for-all-pilot">
-<h2>What are the technical goals of the Hubs for All pilot?<a class="headerlink" href="#what-are-the-technical-goals-of-the-hubs-for-all-pilot" title="Permalink to this headline">¶</a></h2>
-<p>We have the following goals in conducting this pilot:</p>
+  <div class="section" id="customize-a-hub">
+<h1>Customize a hub<a class="headerlink" href="#customize-a-hub" title="Permalink to this headline">¶</a></h1>
+<p>This page contains information about using and customizing your 2i2c Hubs.</p>
+<div class="section" id="include-content-in-your-hub">
+<span id="include-content"></span><h2>Include content in your hub<a class="headerlink" href="#include-content-in-your-hub" title="Permalink to this headline">¶</a></h2>
+<p>To include content in your hub (e.g., scripts, notebooks, etc) we recommend using <a class="reference external" href="https://jupyterhub.github.io/nbgitpuller"><code class="docutils literal notranslate"><span class="pre">nbgitpuller</span></code></a>.</p>
+<p>You can use <code class="docutils literal notranslate"><span class="pre">nbgitpuller</span></code> to generate a link to a public repository, or a file in that repository. When a user clicks that link, then a copy of the link’s target will be automatically placed in the user’s home directory, and they will be directed to that content in the JupyterHub (if they are logged in).</p>
 <ul class="simple">
-<li><p>Build technical infrastructure that can automatically and flexibly deploy lightweight JupyterHubs</p></li>
-<li><p>Understand the limitations of this approach, both technical and user-oriented</p></li>
-<li><p>Improve the underlying technology needed in order to accomplish this</p></li>
-<li><p>Build relationships with partners in research and education who wish to use these hubs for their use-cases</p></li>
-<li><p>Develop a model for sustainably deploying and maintaining these hubs for research and education</p></li>
+<li><p><strong>Generate an nbgitpuller link</strong> by going to <a class="reference external" href="http://nbgitpuller.link/"><code class="docutils literal notranslate"><span class="pre">nbgitpuller.link</span></code></a>. You’ll be asked to provide some information about the content you wish to share, and can copy the link when you are done.</p>
+<ul>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">https://&lt;your-hub&gt;.pilot.2i2c.cloud</span></code> as your JupyterHub address</p></li>
+<li><p>Fill in the GitHub repository where your content exists (along with an optional file path or branch name)</p></li>
+<li><p>The link will be in the field just above your form.</p></li>
+</ul>
+</li>
+<li><p><strong>Share this link with your users</strong>. Anybody can click an <code class="docutils literal notranslate"><span class="pre">nbgitpuller</span></code> link. If they have an account on the hub to which it points, then they’ll get a copy of the content that you’ve linked to.</p></li>
 </ul>
 </div>
-<div class="section" id="who-is-eligible-for-the-2i2c-hubs-pilot">
-<h2>Who is eligible for the 2i2c Hubs pilot?<a class="headerlink" href="#who-is-eligible-for-the-2i2c-hubs-pilot" title="Permalink to this headline">¶</a></h2>
-<p>We are looking for small-ish users from research and education who would like to participate in this pilot program. If you’d like to do one or more of the following using interactive computing infrastructure in the cloud, please <a class="reference external" href="https://2i2c.org/#contact">get in touch</a>.</p>
+<div class="section" id="write-public-books-that-connect-to-a-2i2c-hub">
+<h2>Write public books that connect to a 2i2c Hub<a class="headerlink" href="#write-public-books-that-connect-to-a-2i2c-hub" title="Permalink to this headline">¶</a></h2>
+<p>You can create public content that is designed to have connections with your 2i2c Hub. For example, you can create lectures from Jupyter Notebooks, and allow students to grab their own copy of the notebook to interact with on the 2i2c Hub.</p>
+<p>To connect your public content with a 2i2c Hub, we recommend using <a class="reference external" href="https://jupyterbook.org">Jupyter Book</a>. This is an open-source project that allows you to share collections of notebooks and markdown files as an online website and book. Check out the <a class="reference external" href="https://jupyterbook.org/start/overview.html">Jupyter Book getting started guide</a> for more information about Jupyter Book.</p>
+<p>You can tell Jupyter Book to place links <em>directly to your 2i2c Hub</em> on each page that is served from a notebook. To do so, follow the <a class="reference external" href="https://jupyterbook.org/interactive/launchbuttons.html#jupyterhub-buttons-for-your-pages">launch buttons for JupyterHubs instructions</a>. Make sure that you configure your <code class="docutils literal notranslate"><span class="pre">jupyterhub_url</span></code> to point to the URL of your 2i2c Hub (e.g., <code class="docutils literal notranslate"><span class="pre">https://&lt;your-hub&gt;.pilot.2i2c.cloud</span></code>).</p>
+</div>
+<div class="section" id="choose-the-interface">
+<h2>Choose the interface<a class="headerlink" href="#choose-the-interface" title="Permalink to this headline">¶</a></h2>
+<p>There are a three main interfaces available on the 2i2c Hubs. You may choose from each of these by altering the URL of your session. For example, here is the general structure of a URL for your personal 2i2c Hub session:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">hub</span><span class="o">&gt;.</span><span class="n">pilot</span><span class="o">.</span><span class="mi">2</span><span class="n">i2c</span><span class="o">.</span><span class="n">cloud</span><span class="o">/</span><span class="n">user</span><span class="o">/&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">username</span><span class="o">&gt;/&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">interface</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>You can replace the contents of <code class="docutils literal notranslate"><span class="pre">&lt;your-interface&gt;</span></code> to be one of the following:</p>
 <ul class="simple">
-<li><p>Run a 3-50 person class</p></li>
-<li><p>Run data science infrastructure for your team or lab</p></li>
-<li><p>Run a collaborative project with distributed users</p></li>
-<li><p>Provide online interactive environments for content that you write</p></li>
+<li><p><strong>JupyterLab</strong>: <code class="docutils literal notranslate"><span class="pre">/lab</span></code></p></li>
+<li><p><strong>Jupyter Notebook</strong>: <code class="docutils literal notranslate"><span class="pre">/tree</span></code></p></li>
+<li><p><strong>RStudio</strong>: <code class="docutils literal notranslate"><span class="pre">/rstudio</span></code></p></li>
 </ul>
-</div>
-<div class="section" id="using-a-2i2c-hub">
-<h2>Using a 2i2c Hub<a class="headerlink" href="#using-a-2i2c-hub" title="Permalink to this headline">¶</a></h2>
-<p>For information about how to use a hub, see <a class="reference internal" href="use.html"><span class="doc std std-doc">Customize a hub</span></a>.</p>
-</div>
-<div class="section" id="what-s-in-a-2i2c-hub">
-<h2>What’s in a 2i2c Hub?<a class="headerlink" href="#what-s-in-a-2i2c-hub" title="Permalink to this headline">¶</a></h2>
-<p>For information about the infrastructure behind a 2i2c Hub, see <a class="reference internal" href="infrastructure.html"><span class="doc std std-doc">2i2c Hub infrastructure</span></a>.</p>
-<div class="toctree-wrapper compound">
-</div>
+<p>Note that your 2i2c Hub administrator can also configure the <strong>default</strong> interface that users see. In addition, you can configure the interface that <strong>nbgitpuller links</strong> point to, see <a class="reference internal" href="#include-content"><span class="std std-ref">Include content in your hub</span></a> for information about nbgitpuller links.</p>
 </div>
 </div>
 
@@ -268,7 +263,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='right-next' id="next-link" href="use.html" title="next page">Customize a hub</a>
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">The 2i2c Hubs Pilot</a>
+    <a class='right-next' id="next-link" href="infrastructure.html" title="next page">2i2c Hub infrastructure</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

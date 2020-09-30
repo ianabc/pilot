@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2i2c Hubs for All pilot &#8212; 2i2c Hubs for All Pilot</title>
+    <title>2i2c Hub infrastructure &#8212; 2i2c Hubs for All Pilot</title>
     
   <link rel="stylesheet" href="_static/css/index.d431a4ee1c1efae0e38bdfebc22debff.css">
 
@@ -30,6 +30,9 @@
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
   <link rel="preload" as="script" href="_static/js/index.30270b6e4c972e43c488.js">
 
@@ -43,19 +46,20 @@
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
-    <link rel="canonical" href="https://2i2c.org/pilot/README.html" />
+    <link rel="canonical" href="https://2i2c.org/pilot/infrastructure.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Customize a hub" href="use.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://2i2c.org/pilot/README.html" />
+<meta property="og:url"         content="https://2i2c.org/pilot/infrastructure.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="2i2c Hubs for All pilot" />
-<meta property="og:description" content="2i2c Hubs for All pilot  A pilot project for 2i2c Hubs for all.  See the documentation for more information." />
+<meta property="og:title"       content="2i2c Hub infrastructure" />
+<meta property="og:description" content="2i2c Hub infrastructure  This page contains information about the infrastructure that is provided by the 2i2c Hubs pilot.  Note  This content is meant for those" />
 
 
 <meta name="twitter:card" content="summary" />
@@ -85,7 +89,19 @@
 </form>
 
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  
+  <ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="use.html">
+   Customize a hub
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   2i2c Hub infrastructure
+  </a>
+ </li>
+</ul>
+
 </nav>
 
  <!-- To handle the deprecated key -->
@@ -126,7 +142,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/README.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/infrastructure.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -146,7 +162,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/2i2c-org/pilot/issues/new?title=Issue%20on%20page%20%2FREADME.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/2i2c-org/pilot/issues/new?title=Issue%20on%20page%20%2Finfrastructure.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -166,6 +182,30 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-technology-makes-up-each-hub">
+   What technology makes up each hub?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#where-are-2i2c-hubs-configured">
+   Where are 2i2c Hubs configured?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-could-i-deploy-my-own-2i2c-hub">
+   How could I deploy my own 2i2c Hub?
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -173,10 +213,41 @@
         
               <div>
                 
-  <div class="section" id="i2c-hubs-for-all-pilot">
-<h1>2i2c Hubs for All pilot<a class="headerlink" href="#i2c-hubs-for-all-pilot" title="Permalink to this headline">¶</a></h1>
-<p>A pilot project for 2i2c Hubs for all.</p>
-<p>See <a class="reference external" href="https://2i2c.org/pilot">the documentation</a> for more information.</p>
+  <div class="section" id="i2c-hub-infrastructure">
+<h1>2i2c Hub infrastructure<a class="headerlink" href="#i2c-hub-infrastructure" title="Permalink to this headline">¶</a></h1>
+<p>This page contains information about the infrastructure that is provided by the 2i2c Hubs pilot.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This content is meant for those familiar with cloud infrastructure and tools for deploying things like a 2i2c Hub. It is meant for reference and for guidance to others who wish to run their own infrastructure, but isn’t necessary to use or customize your own 2i2c Hub.</p>
+</div>
+<div class="section" id="what-technology-makes-up-each-hub">
+<h2>What technology makes up each hub?<a class="headerlink" href="#what-technology-makes-up-each-hub" title="Permalink to this headline">¶</a></h2>
+<dl class="simple myst">
+<dt>🚀 core infrastructure</dt><dd><p>Underneath each 2i2c Hub is a <a class="reference external" href="https://jupyter.org/hub">JupyterHub</a>. These provide interactive computing sessions for each of your users, and connect to the other infrastructure in the cloud. We use <a class="reference external" href="https://auth0.com/"><code class="docutils literal notranslate"><span class="pre">auth0</span></code></a> for authenticating users, which can connect to a number of other authentication protocols (such as OAuth2).</p>
+</dd>
+<dt>💻 interfaces</dt><dd><p>Each 2i2c Hub has two main interactive interfaces: Jupyter interfaces (Notebook and Lab), and RStudio. Each of them is accessible from your session via <code class="docutils literal notranslate"><span class="pre">/tree</span></code>, <code class="docutils literal notranslate"><span class="pre">/lab</span></code>, and <code class="docutils literal notranslate"><span class="pre">/rstudio</span></code> endpoints in your URL.</p>
+</dd>
+<dt>🌄 environment</dt><dd><p>Your 2i2c Hub has an environment that has been created for your particular use-case. It exists as a Docker image that your JupyterHub loads when a user starts a new session. These images can either be built with the tool <a class="reference external" href="https://repo2docker.readthedocs.io/">repo2docker</a>, or pulled directly from a Docker registry. The environment also comes pre-loaded with some tools that are helpful for working with JupyterHub, such as <a class="reference external" href="https://jupyterhub.github.io/nbgitpuller">nbgitpuller</a>.</p>
+</dd>
+<dt>🤖 hardware</dt><dd><p>All of the 2i2c Hubs in this pilot run on Google Cloud, using Kubernetes along with Terraform to orchestrate the cloud infrastructure underlying the hub.</p>
+</dd>
+<dt>📦 data</dt><dd><p>The data that is used by your 2i2c Hub is provided by you! 2i2c Hubs can connect with a variety of public data sources. We recommend using standard data structures or specifications via libraries like <a class="reference external" href="https://intake.readthedocs.io/en/latest/">Intake</a>.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="where-are-2i2c-hubs-configured">
+<h2>Where are 2i2c Hubs configured?<a class="headerlink" href="#where-are-2i2c-hubs-configured" title="Permalink to this headline">¶</a></h2>
+<p>All of the configuration and deployment scripts for the 2i2c Hubs can be found at <a class="reference external" href="https://github.com/2i2c-org/low-touch-hubs">this GitHub repository</a>. This repository contains both the deployment code as well as documentation that explains how it works. It should be treated as “for advanced users only”, and is provided for transparency and as a guide for the community to follow if they wish to manage their own infrastructure similar to 2i2c Hubs.</p>
+</div>
+<div class="section" id="how-could-i-deploy-my-own-2i2c-hub">
+<h2>How could I deploy my own 2i2c Hub?<a class="headerlink" href="#how-could-i-deploy-my-own-2i2c-hub" title="Permalink to this headline">¶</a></h2>
+<p>The 2i2c Hubs are all deployed according to best-practices as documented in the following guides:</p>
+<ul class="simple">
+<li><p>For smaller hubs with 5-50 users: <a class="reference external" href="https://tljh.jupyter.org">The Littlest JupyterHub Documentation</a></p></li>
+<li><p>For larger hubs with 5-100+ users: <a class="reference external" href="https://z2jh.jupyter.org">The JupyterHub for Kubernetes Documentation</a></p></li>
+</ul>
+<p>In addition, we recommend checking out <a class="reference external" href="https://github.com/2i2c-org/low-touch-hubs">this GitHub repository</a>, which contains the configuration and deployment scripts for all of the hubs offered under this pilot.</p>
+</div>
 </div>
 
 
@@ -188,6 +259,7 @@
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="use.html" title="previous page">Customize a hub</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
