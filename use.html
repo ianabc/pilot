@@ -193,6 +193,22 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#customize-the-hub-s-environment">
+   Customize the hub’s environment
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installing-packages-from-within-a-jupyter-session">
+     Installing packages from
+     <em>
+      within
+     </em>
+     a Jupyter session
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#write-public-books-that-connect-to-a-2i2c-hub">
    Write public books that connect to a 2i2c Hub
   </a>
@@ -247,6 +263,19 @@
 </li>
 <li><p><strong>Share this link with your users</strong>. Anybody can click an <code class="docutils literal notranslate"><span class="pre">nbgitpuller</span></code> link. If they have an account on the hub to which it points, then they’ll get a copy of the content that you’ve linked to.</p></li>
 </ul>
+</div>
+<div class="section" id="customize-the-hub-s-environment">
+<h2>Customize the hub’s environment<a class="headerlink" href="#customize-the-hub-s-environment" title="Permalink to this headline">¶</a></h2>
+<p>Currently, the best way to customize your hub’s environment is to <a class="reference external" href="https://github.com/2i2c-org/pilot/issues/new">open an issue in this repository</a> and ask for the new package to be installed. We are working on ways to let individual hubs customize their environment on their own, and will update these docs when that happens!</p>
+<p>The environment for all pilot hubs is defined <a class="reference external" href="https://github.com/2i2c-org/low-touch-hubs/tree/master/image">in this folder</a>. It is a bit technical, but gives an idea of the kinds of libraries that are installed by default. In particular:</p>
+<ul class="simple">
+<li><p>For Python: <a class="reference external" href="https://github.com/2i2c-org/low-touch-hubs/blob/master/image/environment.yml">see this <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file</a> for common Python packages</p></li>
+<li><p>For R: <a class="reference external" href="https://github.com/2i2c-org/low-touch-hubs/blob/master/image/install.R">see this <code class="docutils literal notranslate"><span class="pre">install.R</span></code> file</a></p></li>
+</ul>
+<div class="section" id="installing-packages-from-within-a-jupyter-session">
+<h3>Installing packages from <em>within</em> a Jupyter session<a class="headerlink" href="#installing-packages-from-within-a-jupyter-session" title="Permalink to this headline">¶</a></h3>
+<p>Note that you may install packages from within a running JupyterHub session (e.g. by running <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">mypackage</span></code> from the terminal). However, these packages will be removed the next time that you start a JupyterHub session.</p>
+</div>
 </div>
 <div class="section" id="write-public-books-that-connect-to-a-2i2c-hub">
 <h2>Write public books that connect to a 2i2c Hub<a class="headerlink" href="#write-public-books-that-connect-to-a-2i2c-hub" title="Permalink to this headline">¶</a></h2>
