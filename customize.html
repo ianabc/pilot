@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customize your hub &#8212; 2i2c Hubs for All Pilot</title>
+    
+  <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/sphinx-book-theme.2d2078699c18a0efb88233928e1cf6ed.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <link rel="canonical" href="https://2i2c.org/pilot/customize.html" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Frequently Asked Questions" href="faq.html" />
+    <link rel="prev" title="Use your hub" href="use.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://2i2c.org/pilot/customize.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Customize your hub" />
+<meta property="og:description" content="Customize your hub  Customize the hub’s environment  Currently, the best way to customize your hub’s environment is to open an issue in this repository and ask " />
+
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">2i2c Hubs for All Pilot</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="use.html">
+   Use your hub
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Customize your hub
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="faq.html">
+   Frequently Asked Questions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="infrastructure.html">
+   2i2c Hub infrastructure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="about.html">
+   About this Project
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/customize.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/2i2c-org/pilot"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/2i2c-org/pilot/issues/new?title=Issue%20on%20page%20%2Fcustomize.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#customize-the-hub-s-environment">
+   Customize the hub’s environment
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#installing-packages-from-within-a-jupyter-session">
+     Installing packages from
+     <em>
+      within
+     </em>
+     a Jupyter session
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#choose-the-interface">
+   Choose the interface
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-administrator-dashboard">
+   The Administrator Dashboard
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-remove-users">
+     Add / remove users
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#take-control-of-a-user-s-server">
+     Take control of a user’s server
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="customize-your-hub">
+<h1>Customize your hub<a class="headerlink" href="#customize-your-hub" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="customize-the-hub-s-environment">
+<h2>Customize the hub’s environment<a class="headerlink" href="#customize-the-hub-s-environment" title="Permalink to this headline">¶</a></h2>
+<p>Currently, the best way to customize your hub’s environment is to <a class="reference external" href="https://github.com/2i2c-org/pilot/issues/new">open an issue in this repository</a> and ask for the new package to be installed. We are working on ways to let individual hubs customize their environment on their own, and will update these docs when that happens!</p>
+<p>The environment for all pilot hubs is defined <a class="reference external" href="https://github.com/2i2c-org/low-touch-hubs/tree/master/image">in this folder</a>. It is a bit technical, but gives an idea of the kinds of libraries that are installed by default. In particular:</p>
+<ul class="simple">
+<li><p>For Python: <a class="reference external" href="https://github.com/2i2c-org/low-touch-hubs/blob/master/image/environment.yml">see this <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> file</a> for common Python packages</p></li>
+<li><p>For R: <a class="reference external" href="https://github.com/2i2c-org/low-touch-hubs/blob/master/image/install.R">see this <code class="docutils literal notranslate"><span class="pre">install.R</span></code> file</a></p></li>
+</ul>
+<div class="section" id="installing-packages-from-within-a-jupyter-session">
+<h3>Installing packages from <em>within</em> a Jupyter session<a class="headerlink" href="#installing-packages-from-within-a-jupyter-session" title="Permalink to this headline">¶</a></h3>
+<p>Note that you may install packages from within a running JupyterHub session (e.g. by running <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">mypackage</span></code> from the terminal). However, these packages will be removed the next time that you start a JupyterHub session.</p>
+</div>
+</div>
+<div class="section" id="choose-the-interface">
+<h2>Choose the interface<a class="headerlink" href="#choose-the-interface" title="Permalink to this headline">¶</a></h2>
+<p>There are a three main interfaces available on the 2i2c Hubs. You may choose from each of these by altering the URL of your session. For example, here is the general structure of a URL for your personal 2i2c Hub session:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">hub</span><span class="o">&gt;.</span><span class="n">pilot</span><span class="o">.</span><span class="mi">2</span><span class="n">i2c</span><span class="o">.</span><span class="n">cloud</span><span class="o">/</span><span class="n">user</span><span class="o">/&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">username</span><span class="o">&gt;/&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">interface</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>You can replace the contents of <code class="docutils literal notranslate"><span class="pre">&lt;your-interface&gt;</span></code> to be one of the following:</p>
+<ul class="simple">
+<li><p><strong>JupyterLab</strong>: <code class="docutils literal notranslate"><span class="pre">/lab</span></code></p></li>
+<li><p><strong>Jupyter Notebook</strong>: <code class="docutils literal notranslate"><span class="pre">/tree</span></code></p></li>
+<li><p><strong>RStudio</strong>: <code class="docutils literal notranslate"><span class="pre">/rstudio</span></code></p></li>
+</ul>
+<p>Note that your 2i2c Hub administrator can also configure the <strong>default</strong> interface that users see. In addition, you can configure the interface that <strong>nbgitpuller links</strong> point to, see <a class="reference internal" href="use.html#include-content"><span class="std std-ref">Include content in your hub</span></a> for information about nbgitpuller links.</p>
+</div>
+<div class="section" id="the-administrator-dashboard">
+<h2>The Administrator Dashboard<a class="headerlink" href="#the-administrator-dashboard" title="Permalink to this headline">¶</a></h2>
+<p>The JupyterHub administrator dashboard allows you to control several aspects of your JupyterHub. It is available via most of the user interfaces on your hub, as well as at the following URL:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">hub</span><span class="o">&gt;.</span><span class="n">pilot</span><span class="o">.</span><span class="mi">2</span><span class="n">i2c</span><span class="o">.</span><span class="n">cloud</span><span class="o">/</span><span class="n">hub</span><span class="o">/</span><span class="n">admin</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The administrator panel will only be available to user names you have explicitly requested to be administrators!</p>
+</div>
+<div class="figure align-default" id="id1">
+<img alt="_images/admin-panel.png" src="_images/admin-panel.png" />
+<p class="caption"><span class="caption-text">An example administrator’s panel</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>From the administrator panel, you can see several columns and buttons:</p>
+<dl class="simple myst">
+<dt><code class="docutils literal notranslate"><span class="pre">User</span></code></dt><dd><p>The username of each user in your 2i2c Hub (both logged-in and logged-out)</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">Admin</span></code></dt><dd><p>Whether that user is an administrator</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">Last</span> <span class="pre">Activity</span></code></dt><dd><p>The last time that the user’s server logged any activity (e.g. opening a file, running code, or logging in).</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">Running</span></code></dt><dd><p>Whether the user’s server is currently running. You may also <strong>start or stop a user’s server</strong> from this column.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">Shutdown</span> <span class="pre">Hub</span></code></dt><dd><p>Shutdown the hub for all users (it may be restarted as well).</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">User</span></code></dt><dd><p>Edit the username information or make a user an administrator.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">access</span> <span class="pre">server</span></code></dt><dd><p>Take over the user’s session so that you may inspect what they are doing (this is helpful for debugging).</p>
+</dd>
+</dl>
+<div class="section" id="add-remove-users">
+<h3>Add / remove users<a class="headerlink" href="#add-remove-users" title="Permalink to this headline">¶</a></h3>
+<p>To add or remove users for your 2i2c Hub, go to the <strong>Administrator Panel</strong> and click on the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Users</span></code> button. This will allow you to add one-or-more users to the hub.</p>
+<p>The types of usernames you add will depend on the kind of authentication you’ve requested for your hub (e.g., email addresses vs user names).</p>
+</div>
+<div class="section" id="take-control-of-a-user-s-server">
+<span id="access-server"></span><h3>Take control of a user’s server<a class="headerlink" href="#take-control-of-a-user-s-server" title="Permalink to this headline">¶</a></h3>
+<p>If you’d like to debug a user’s server, you may take control over their session by clicking the <strong>access server</strong> button. This will show you the latest file that they were working on. This is particularly useful for helping them debug a problem with their session.</p>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="use.html" title="previous page">Use your hub</a>
+    <a class='right-next' id="next-link" href="faq.html" title="next page">Frequently Asked Questions</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By 2i2c<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
