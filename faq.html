@@ -124,7 +124,7 @@
  <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+  By the <a href='https://2i2c.org'>International Interactive Computing Collaboration</a> (2i2c)
 </div>
 
 </div>
@@ -211,8 +211,22 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-guarantees-do-i-have-for-this-pilot">
+   What guarantees do I have for this pilot?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#what-happens-if-i-want-to-move-off-of-a-2i2c-hub">
-   What happens if I want to move off of a 2i2c hub?
+   What happens if I want to move off of a 2i2c Hub?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wait-you-really-want-it-to-be-easy-for-people-to-leave-2i2c-hubs">
+   Wait, you really want it to be easy for people to
+   <em>
+    leave
+   </em>
+   2i2c Hubs?
   </a>
  </li>
 </ul>
@@ -232,9 +246,19 @@
 <h2>Will my files and work persist between sessions?<a class="headerlink" href="#will-my-files-and-work-persist-between-sessions" title="Permalink to this headline">¶</a></h2>
 <p>Yes! Each user of a 2i2c Hub has their own filesystem that will persist between sessions.</p>
 </div>
+<div class="section" id="what-guarantees-do-i-have-for-this-pilot">
+<h2>What guarantees do I have for this pilot?<a class="headerlink" href="#what-guarantees-do-i-have-for-this-pilot" title="Permalink to this headline">¶</a></h2>
+<p>We know it is really frustrating to rely on infrastructure that is undependable or often breaks. For this reason, we’ve designed 2i2c Hubs to be as fault-tolerant as possible. If things break, they should break for only one person rather than for an entire hub. If things must be changed, they should be changeable easily and quickly.</p>
+<p>In addition, JupyterHub is designed to give you a degree of administrative control over what’s going on inside. For example, you can <a class="reference internal" href="administrators.html#add-users"><span class="std std-ref">add your own users</span></a> and even help them debug their problem by <a class="reference internal" href="administrators.html#access-server"><span class="std std-ref">taking over their interactive session</span></a>.</p>
+<p>That said, this is a pilot being run with limited resources. You should not expect someone to respond to your questions and problems <em>immediately</em>. However, we’ll do our best to get back to you quickly. Moreover, the 2i2c Hubs are not currently provided with a guarantee around site reliability (though we will informally tell you that they are generally very reliable).</p>
+</div>
 <div class="section" id="what-happens-if-i-want-to-move-off-of-a-2i2c-hub">
-<h2>What happens if I want to move off of a 2i2c hub?<a class="headerlink" href="#what-happens-if-i-want-to-move-off-of-a-2i2c-hub" title="Permalink to this headline">¶</a></h2>
-<p>2i2c Hubs are designed to use entirely open source tools that are vendor- and workflow-agnostic. Our goal is to provide you with interactive computing environments that seamlessly integrate with pre-existing workflows across the research and education community. That means that it should be <strong>extremely easy</strong> to move off of a 2i2c Hub and into a different online environment that uses the Jupyter stack (or simply onto your own computer). For example, you can <a class="reference internal" href="use.html#download-as-pdf"><span class="std std-ref">download all of your files</span></a>.</p>
+<h2>What happens if I want to move off of a 2i2c Hub?<a class="headerlink" href="#what-happens-if-i-want-to-move-off-of-a-2i2c-hub" title="Permalink to this headline">¶</a></h2>
+<p>2i2c Hubs are designed to use entirely open-source tools that work in other contexts. You can take your workflows elsewhere if you wish, and you can even deploy your own JupyterHub that recreates the same cloud-based experience. For more information, see <a class="reference internal" href="administrators.html#migration-guide"><span class="std std-ref">2i2c Hub migration guide</span></a>.</p>
+</div>
+<div class="section" id="wait-you-really-want-it-to-be-easy-for-people-to-leave-2i2c-hubs">
+<h2>Wait, you really want it to be easy for people to <em>leave</em> 2i2c Hubs?<a class="headerlink" href="#wait-you-really-want-it-to-be-easy-for-people-to-leave-2i2c-hubs" title="Permalink to this headline">¶</a></h2>
+<p>Yes! We are a non-profit organization with a mission to make open infrastructure for interactive computing more accessible for the research and education community. We believe that using tools that are interoperable, open-source, and owned by the community will most-benefit research and education and make it more equitable and inclusive. For this reason we are committed to deploying open source infrastructure that you can both take elsewhere or even deploy on your own.</p>
 </div>
 </div>
 

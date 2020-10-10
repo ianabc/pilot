@@ -60,7 +60,7 @@
 <meta property="og:url"         content="https://2i2c.org/pilot/index.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="The 2i2c Hubs Pilot" />
-<meta property="og:description" content="The 2i2c Hubs Pilot  The 2i2c Hubs Pilot is a project to provide JupyterHubs running on cloud infrastructure in a manner that is both accessible and scalable to" />
+<meta property="og:description" content="The 2i2c Hubs Pilot  The 2i2c Hubs Pilot is a project to provide JupyterHubs running on cloud infrastructure that is both accessible and scalable to many hubs a" />
 
 
 <meta name="twitter:card" content="summary" />
@@ -123,7 +123,7 @@
  <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+  By the <a href='https://2i2c.org'>International Interactive Computing Collaboration</a> (2i2c)
 </div>
 
 </div>
@@ -205,13 +205,23 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#who-is-eligible-for-the-2i2c-hubs-pilot">
-   Who is eligible for the 2i2c Hubs pilot?
+  <a class="reference internal nav-link" href="#what-is-a-2i2c-hub">
+   What is a 2i2c Hub?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-kinds-of-guarantees-do-i-have-for-this-pilot">
-   What kinds of guarantees do I have for this pilot?
+  <a class="reference internal nav-link" href="#what-environment-do-i-get">
+   What environment do I get?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#who-created-the-2i2c-hubs">
+   Who created the 2i2c Hubs?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#who-is-eligible-for-the-2i2c-hubs-pilot">
+   Who is eligible for the 2i2c Hubs pilot?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -237,11 +247,49 @@
                 
   <div class="section" id="the-2i2c-hubs-pilot">
 <h1>The 2i2c Hubs Pilot<a class="headerlink" href="#the-2i2c-hubs-pilot" title="Permalink to this headline">¶</a></h1>
-<p>The 2i2c Hubs Pilot is a project to provide JupyterHubs running on cloud infrastructure in a manner that is both accessible and scalable to many hubs and organizations. Fore more information, see <a class="reference internal" href="about.html#about-the-project"><span class="std std-ref">About this Project</span></a>.</p>
-<p>Thanks for your interest in the 2i2c Hubs pilot. This documentation should help give you an idea for the goals of this pilot project, as well as information about how you can use and customize the 2i2c Hubs that are deployed.</p>
+<p>The 2i2c Hubs Pilot is a project to provide JupyterHubs running on cloud infrastructure that is both accessible and scalable to many hubs and organizations. Fore more information, see <a class="reference internal" href="about.html#about-the-project"><span class="std std-ref">About this Project</span></a>.</p>
 <div class="warning admonition">
 <p class="admonition-title"> The pilot is in an alpha phase!</p>
 <p>Information that you see here might be out-of-date as our technology stack and information around it are rapidly changing.</p>
+</div>
+<div class="section" id="what-is-a-2i2c-hub">
+<h2>What is a 2i2c Hub?<a class="headerlink" href="#what-is-a-2i2c-hub" title="Permalink to this headline">¶</a></h2>
+<p>A 2i2c Hub is a cloud-based interactive computing environment built entirely on open-source technology and customized for research and education. Each 2i2c Hub is deployed for a specific community, and can be customized for that community.
+It brings together <strong>environments, datasets, computing resources, and content</strong>. Here’s a small overview that gives and idea for the major parts of a 2i2c Hub:</p>
+<a class="reference internal image-reference" href="https://2i2c.org/img/2i2c-hub-overview.png"><img alt="https://2i2c.org/img/2i2c-hub-overview.png" src="https://2i2c.org/img/2i2c-hub-overview.png" style="height: 300px;" /></a>
+</div>
+<div class="section" id="what-environment-do-i-get">
+<h2>What environment do I get?<a class="headerlink" href="#what-environment-do-i-get" title="Permalink to this headline">¶</a></h2>
+<p>2i2c Hubs have a number of packages pre-installed that are particularly useful for research and education. They provide the following user-interfaces by default:</p>
+<div class="sphinx-bs container pb-4 interface-logos text-center docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text"><a class="reference external" href="https://jupyterlab.readthedocs.io/">Jupyter Lab</a> / <a class="reference external" href="https://jupyter-notebook.readthedocs.io/en/stable/">Jupyter Notebook</a></p>
+</div>
+<div class="card-body docutils">
+<p class="card-text"><img alt="Jupyter Logo" src="https://jupyter.org/assets/nav_logo.svg" /></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text"><a class="reference external" href="https://rstudio.com/">RStudio</a></p>
+</div>
+<div class="card-body docutils">
+<p class="card-text"><img alt="RStudio Logo" src="https://rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png" /></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>For more information about each 2i2c Hub, see <a class="reference internal" href="infrastructure.html"><span class="doc std std-doc">2i2c Hub infrastructure</span></a>.</p>
+</div>
+<div class="section" id="who-created-the-2i2c-hubs">
+<h2>Who created the 2i2c Hubs?<a class="headerlink" href="#who-created-the-2i2c-hubs" title="Permalink to this headline">¶</a></h2>
+<p>2i2c Hubs are designed and deployed by the <a class="reference external" href="https://2i2c.org">International Interactive Computing Collaboration</a> (or 2i2c). They are <a class="reference external" href="https://2i2c.org/about/">a team with many years of experience</a> running interactive computing infrastructure for research and education.</p>
 </div>
 <div class="section" id="who-is-eligible-for-the-2i2c-hubs-pilot">
 <h2>Who is eligible for the 2i2c Hubs pilot?<a class="headerlink" href="#who-is-eligible-for-the-2i2c-hubs-pilot" title="Permalink to this headline">¶</a></h2>
@@ -252,12 +300,6 @@
 <li><p>Run a collaborative project with distributed users</p></li>
 <li><p>Provide online interactive environments for content that you write</p></li>
 </ul>
-</div>
-<div class="section" id="what-kinds-of-guarantees-do-i-have-for-this-pilot">
-<h2>What kinds of guarantees do I have for this pilot?<a class="headerlink" href="#what-kinds-of-guarantees-do-i-have-for-this-pilot" title="Permalink to this headline">¶</a></h2>
-<p>We know that it is really frustrating to rely on infrastructure that is undependable or often breaks. For this reason, we’ve designed 2i2c Hubs to be as fault-tolerant as possible. If things break, they should break for only one person rather than for an entire hub. If things must be changed, they should be changeable easily and quickly.</p>
-<p>In addition, JupyterHub is designed to give you a degree of administrative control over what’s going on inside. For example, you can add your own users and even help them debug their problem by taking over their session. See <a class="reference internal" href="administrators.html#access-server"><span class="std std-ref">Take control of a user’s server</span></a>.</p>
-<p>That said, this is a pilot being run with limited resources. You should not expect someone to respond to your questions and problems <em>immediately</em>. However, we’ll do our best to get back to you quickly. Moreover, the 2i2c Hubs are not currently provided with a guarantee around site reliability (though we will informally tell you that they are generally very reliable).</p>
 </div>
 <div class="section" id="using-a-2i2c-hub">
 <h2>Using a 2i2c Hub<a class="headerlink" href="#using-a-2i2c-hub" title="Permalink to this headline">¶</a></h2>

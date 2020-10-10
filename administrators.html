@@ -124,7 +124,7 @@
  <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+  By the <a href='https://2i2c.org'>International Interactive Computing Collaboration</a> (2i2c)
 </div>
 
 </div>
@@ -251,6 +251,38 @@
    Take control of a user’s server
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#i2c-hub-migration-guide">
+   2i2c Hub migration guide
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#download-your-user-files">
+     Download your user files
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#deploy-your-own-jupyterhub">
+     Deploy your own JupyterHub
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#re-create-the-user-environment">
+     Re-create the user environment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#use-a-different-managed-cloud-service">
+     Use a different managed cloud service
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-2i2c-hubs-for-all-deployment-repository">
+     The 2i2c Hubs for All deployment repository
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
         </nav>
@@ -330,7 +362,7 @@
 </dl>
 </div>
 <div class="section" id="add-remove-users">
-<h2>Add / remove users<a class="headerlink" href="#add-remove-users" title="Permalink to this headline">¶</a></h2>
+<span id="add-users"></span><h2>Add / remove users<a class="headerlink" href="#add-remove-users" title="Permalink to this headline">¶</a></h2>
 <p>To add or remove users for your 2i2c Hub, go to the <strong>Administrator Panel</strong> and click on the <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">Users</span></code> button. This will allow you to add one-or-more users to the hub.</p>
 <p>The types of usernames you add will depend on the kind of authentication you’ve requested for your hub (e.g., email addresses vs user names).</p>
 <div class="sphinx-bs full-width docutils">
@@ -364,6 +396,36 @@
 <div class="figure align-default" id="id4">
 <img alt="_images/access-server.png" src="_images/access-server.png" />
 <p class="caption"><span class="caption-text">Clicking “access server” will allow you to control the user’s session.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="i2c-hub-migration-guide">
+<span id="migration-guide"></span><h2>2i2c Hub migration guide<a class="headerlink" href="#i2c-hub-migration-guide" title="Permalink to this headline">¶</a></h2>
+<p>2i2c Hubs are designed to use entirely open source tools that are vendor- and workflow-agnostic. Our goal is to provide you with interactive computing environments that seamlessly integrate with pre-existing workflows across the research and education community. That means we want it to be <strong>extremely easy to move off of a 2i2c Hub</strong>. This section has a few tips for how you can move off of a 2i2c Hub and into a different environment that uses the Jupyter stack.</p>
+<div class="section" id="download-your-user-files">
+<h3>Download your user files<a class="headerlink" href="#download-your-user-files" title="Permalink to this headline">¶</a></h3>
+<p>2i2c Hubs come pre-configured with a button that allows users to zip and download all of the data in the user filesystem. See <a class="reference internal" href="use.html#download-user-files"><span class="std std-ref">Download your data from a hub</span></a>.</p>
+</div>
+<div class="section" id="deploy-your-own-jupyterhub">
+<h3>Deploy your own JupyterHub<a class="headerlink" href="#deploy-your-own-jupyterhub" title="Permalink to this headline">¶</a></h3>
+<p>2i2c Hubs are an opinionated collection of open source tools, customized for research and education. Using an entirely open stack means that you can deploy these tools yourself if you wish. The first step is to deploy your own JupyterHub, which can run on a variety of cloud vendors (or even your own hardware).</p>
+<p><a class="reference external" href="https://z2jh.jupyter.org">The Zero to JupyterHub for Kubernetes guide</a> is an opinionated guide to deploying JupyterHub on Kubernetes. The 2i2c team has written much of the content in this guide, and encourages you to follow it in deploying your own hub infrastructure! The 2i2c Hubs use much of the steps in this guide for their deployment. They also use the <a class="reference external" href="https://github.com/jupyterhub/helm-chart">JupyterHub Helm Chart</a> in order to deploy JupyterHub in a scalable and flexible way.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you’d like a more lightweight distribution of JupyterHub, you can try out  <a class="reference external" href="https://tljh.jupyter.org">The Littlest JupyterHub</a>. This distribution of JupyterHub is easier to set up for smaller teams.</p>
+</div>
+</div>
+<div class="section" id="re-create-the-user-environment">
+<h3>Re-create the user environment<a class="headerlink" href="#re-create-the-user-environment" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">pilot-hubs</span></code> repository has <a class="reference external" href="https://github.com/2i2c-org/pilot-hubs/tree/master/images/user">the configuration for default user environments</a>. These scripts and files are used to create the Docker image that is used in a 2i2c Hub. We upload that Docker image to a registry and then <a class="reference external" href="https://github.com/2i2c-org/pilot-hubs/blob/master/hub/values.yaml#L85">configure each JupyterHub to use it here</a>.</p>
+<p>For more information about creating custom environments for a JupyterHub, we recommend checking out the <a class="reference external" href="https://repo2docker.readthedocs.io/">repo2docker project</a>, which builds Docker images from Binder repositories.</p>
+</div>
+<div class="section" id="use-a-different-managed-cloud-service">
+<h3>Use a different managed cloud service<a class="headerlink" href="#use-a-different-managed-cloud-service" title="Permalink to this headline">¶</a></h3>
+<p>Finally, if you wish to use a different managed cloud service, there are many for you to choose from. These tend to have proprietary components interwoven with open-source ones, which can be a “pro” or a “con” depending on your use-case. 2i2c Hubs are designed to be 100% open source and interoperable with a variety of cloud vendors, however your workflows may be transportable to a proprietary cloud service just the same.</p>
+</div>
+<div class="section" id="the-2i2c-hubs-for-all-deployment-repository">
+<h3>The 2i2c Hubs for All deployment repository<a class="headerlink" href="#the-2i2c-hubs-for-all-deployment-repository" title="Permalink to this headline">¶</a></h3>
+<p>If you’d like to see the configuration and deployment scripts for the Hubs for All pilot, you can find it at <a class="reference external" href="https://github.com/2i2c-org/pilot-hubs">the <code class="docutils literal notranslate"><span class="pre">2i2c-hubs</span></code> configuration repository</a>. This is more complex than setting up a single JupyterHub, since it manages the entire federation of 2i2c Hubs in this pilot. You can also find <a class="reference external" href="https://2i2c.org/pilot-hubs/">our documentation for running and configuring hubs with this repository</a>.</p>
 </div>
 </div>
 </div>
