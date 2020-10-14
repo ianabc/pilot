@@ -61,7 +61,7 @@
 <meta property="og:url"         content="https://2i2c.org/pilot/use.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="User Guide" />
-<meta property="og:description" content="User Guide  This page contains information about using and customizing your 2i2c Hubs. If you’d like to connect with the Hubs support team, click one of the but" />
+<meta property="og:description" content="User Guide  This page contains information about using and customizing your 2i2c Hubs.  Hub Support  If you’d like to connect with the Hubs support team, click " />
 
 
 <meta name="twitter:card" content="summary" />
@@ -206,6 +206,11 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-note-on-hub-urls">
+   A note on hub URLs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#include-content-in-your-hub">
    Include content in your hub
   </a>
@@ -238,8 +243,9 @@
                 
   <div class="section" id="user-guide">
 <h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
-<p>This page contains information about using and customizing your 2i2c Hubs.
-If you’d like to connect with the Hubs support team, click one of the buttons below to open an issue.</p>
+<p>This page contains information about using and customizing your 2i2c Hubs.</p>
+<p><strong>Hub Support</strong></p>
+<p>If you’d like to connect with the Hubs support team, click one of the buttons below to open an issue.</p>
 <div class="sphinx-bs container pb-4 docutils">
 <div class="row docutils">
 <div class="d-flex col-4 docutils">
@@ -255,7 +261,7 @@ If you’d like to connect with the Hubs support team, click one of the buttons 
 <div class="d-flex col-4 docutils">
 <div class="card w-100 border-1 text-center docutils">
 <div class="card-header docutils">
-<p class="card-text">Report a technical issue 🐛</p>
+<p class="card-text">Report an issue 🐛</p>
 </div>
 <div class="card-body docutils">
 <p class="card-text"><a class="sphinx-bs btn text-wrap stretched-link reference external" href="https://github.com/2i2c-org/pilot/issues/new?labels=bug&amp;template=tech-support.md"><span>Crashing sessions, broken webpages, etc.</span></a></p>
@@ -274,6 +280,14 @@ If you’d like to connect with the Hubs support team, click one of the buttons 
 </div>
 </div>
 </div>
+<div class="section" id="a-note-on-hub-urls">
+<span id="note-on-urls"></span><h2>A note on hub URLs<a class="headerlink" href="#a-note-on-hub-urls" title="Permalink to this headline">¶</a></h2>
+<p>Each community participating in the 2i2c Hubs Pilot will get their own JupyterHub instance. These instances are running at a URL with the following form:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">hub</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;.&lt;</span><span class="n">community</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;.</span><span class="mi">2</span><span class="n">i2c</span><span class="o">.</span><span class="n">cloud</span>
+</pre></div>
+</div>
+<p>Each 2i2c Hub has <strong>hub name</strong> (denoted by <code class="docutils literal notranslate"><span class="pre">&lt;hub-name&gt;</span></code>) and a <strong>community name</strong> (denoted by <code class="docutils literal notranslate"><span class="pre">&lt;community-name&gt;</span></code>). Communities are collections of hubs around a particular community or collaboration. Each community infrastructure may be run by different teams. For more information, see <a class="reference internal" href="infrastructure.html#people-behind-hubs"><span class="std std-ref">What people run the hubs?</span></a>.</p>
+</div>
 <div class="section" id="include-content-in-your-hub">
 <span id="include-content"></span><h2>Include content in your hub<a class="headerlink" href="#include-content-in-your-hub" title="Permalink to this headline">¶</a></h2>
 <p>To include content in your hub (e.g., scripts, notebooks, etc) we recommend using <a class="reference external" href="https://jupyterhub.github.io/nbgitpuller"><code class="docutils literal notranslate"><span class="pre">nbgitpuller</span></code></a>.</p>
@@ -288,6 +302,10 @@ If you’d like to connect with the Hubs support team, click one of the buttons 
 </li>
 <li><p><strong>Share this link with your users</strong>. Anybody can click an <code class="docutils literal notranslate"><span class="pre">nbgitpuller</span></code> link. If they have an account on the hub to which it points, then they’ll get a copy of the content that you’ve linked to.</p></li>
 </ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Make sure that the hub URL you insert into the nbgitpuller form is correct! See <a class="reference internal" href="#note-on-urls"><span class="std std-ref">A note on hub URLs</span></a> for more information.</p>
+</div>
 <p><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block reference external" href="http://nbgitpuller.link"><span>Go to nbgitpuller.link</span></a></p>
 <div class="figure align-default" id="id1">
 <img alt="_images/nbgitpuller-ui.png" src="_images/nbgitpuller-ui.png" />
