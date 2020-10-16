@@ -252,6 +252,11 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#share-data-and-files-across-users">
+   Share data and files across users?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#i2c-hub-migration-guide">
    2i2c Hub migration guide
   </a>
@@ -397,6 +402,26 @@
 <img alt="_images/access-server.png" src="_images/access-server.png" />
 <p class="caption"><span class="caption-text">Clicking “access server” will allow you to control the user’s session.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
+</div>
+<div class="section" id="share-data-and-files-across-users">
+<h2>Share data and files across users?<a class="headerlink" href="#share-data-and-files-across-users" title="Permalink to this headline">¶</a></h2>
+<p>Hubs have a folder called <code class="docutils literal notranslate"><span class="pre">shared</span></code> that is meant for distributing files, data, etc that <strong>all users have access to</strong>. This can be useful for utilizing a shared resource on the hub so that all students don’t have to download it themselves (for example, a dataset that is commonly-used in course material).</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">shared</span></code> folder is <strong>read-only</strong>, and accessible by <em>all</em> users. There is also a <code class="docutils literal notranslate"><span class="pre">shared-readwrite</span></code> folder that has <strong>write and read</strong> privileges, and <strong>only accessible by hub administrators</strong>. All files placed in <code class="docutils literal notranslate"><span class="pre">shared-readwrite</span></code> will show up in <code class="docutils literal notranslate"><span class="pre">shared</span></code> for users.</p>
+<p>To share files across users, follow these steps:</p>
+<ul>
+<li><p><strong>Hub Aministrators</strong> put files in <code class="docutils literal notranslate"><span class="pre">shared-readwrite</span></code>.</p>
+<p>e.g. on an admin account, put a CSV file in a location like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">~/</span><span class="n">shared</span><span class="o">-</span><span class="n">readwrite</span><span class="o">/</span><span class="n">myshareddata</span><span class="o">.</span><span class="n">csv</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Users access those files</strong> in their code. E.g., run code like:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;~/shared/myshareddata.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ul>
 </div>
 <div class="section" id="i2c-hub-migration-guide">
 <span id="migration-guide"></span><h2>2i2c Hub migration guide<a class="headerlink" href="#i2c-hub-migration-guide" title="Permalink to this headline">¶</a></h2>
